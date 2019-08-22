@@ -9,26 +9,44 @@ html, body {
   outline: none;
   min-width: 320px; /* built with iPhone 5/SE dimensions */
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, p, div {
+  margin: 0;
+}
+
+.background-img {
+  width: 100vw;
 }
 
 #navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  font-size: 19px;
-  line-height: 75px;
-  height: 75px;
-  padding: 0;
-  width: 100%;
   min-width: 320px;
   z-index: 1;
 }
 
+.logo {
+  position: fixed;
+  left: 4%;
+  top: 0;
+  color: white;
+  font-size: 22px;
+  line-height: 75px;
+  text-decoration: none;
+}
+
 #navigation {
+  left: 60%;
+  width: 40%;
+  position: fixed;
+  top: 0;
+  font-size: 19px;
+  line-height: 75px;
+  height: 75px;
   display: grid;
   margin: 0;
   list-style: none;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
   grid-gap: 0;
   text-align: center;
   padding: 0;

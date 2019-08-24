@@ -11,6 +11,8 @@
 <body>
 
 <header>
+  <div class="header-overlay"></div>
+  <img class="background-img" src="img/header.jpg">
   <div class="navbar">
     <a class="logo" href="index.html">
       <div class="logo-letters">
@@ -26,10 +28,8 @@
       <a class="navigation-link scroll" href="#rsvp">RSVP</a>
     </nav>
   </div>
-  <div>
-    <img class="background-img" src="img/header.jpg">
-  </div>
-  <!--<div class="headline">Eugene & Liya</div>-->
+  <div class="headline">Eugene & Liya</div>
+  <a class="arrow-down arrow-down-1" href="#schedule"></a>
 </header>
 
 <main>
@@ -52,6 +52,7 @@
         <br>Dauphin, PA 17018</p>
       <p class="schedule">Reception to follow.</p>
     </section>
+    <a class="arrow-down arrow-down-2" href="#registry"></a>
   </div>
 
   <div id="registry">
@@ -74,6 +75,7 @@
         </div>
       </div>
     </section>
+    <a class="arrow-down arrow-down-3" href="#rsvp"></a>
   </div>
 
   <div id="rsvp">
@@ -83,7 +85,7 @@
       <hr class="hr-right">
     </div>
     <section class="section-text-wrapper">
-      <div class="alert">Your message has been sent</div>
+      <div class="alert">Thank you for your response!</div>
       <div class="contact-form">
         <form id="contact-form" method="post" action="">
           <input name="name" type="text" class="form-control" placeholder="Your Name" required id="name">
@@ -93,7 +95,7 @@
           <textarea name="message" class="form-control" placeholder="Enter message here..." rows="4"
                     required id="message"></textarea>
           <br>
-          <input type="submit" class="form-control submit" value="SEND MESSAGE">
+          <input type="submit" class="submit" value="SEND MESSAGE">
 
         </form>
       </div>
@@ -102,9 +104,7 @@
 
 </main>
 
-<a onclick="backToTop()" title="Go to top">
-  <img src="img/back-to-top-btn.png" class="back-to-top-btn" id="back-to-top-btn"/>
-</a>
+<a onclick="backToTop()" title="Go to top" class="back-to-top-btn" id="back-to-top-btn"></a>
 
 <footer class="footer">
   <div class="copyright">Copyright &copy; 2019 All Rights Reserved. Developed and designed by <a

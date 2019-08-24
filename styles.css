@@ -115,20 +115,27 @@ h1, h2, h3, h4, p, div {
   width: 50vw;
 }
 
-.schedule-intro {
+.section-text-wrapper {
+  width: 60vw;
+  margin: auto auto 0;
   text-align: center;
-  font-size: 1.2em;
+  background-color: white;
+  border: 1px silver solid;
+  padding: 2em;
+}
+
+.schedule {
+  font-size: 1em;
   padding: .4em;
+  line-height: 1.5em;
 }
 
 .schedule-time {
-  text-align: center;
   font-size: 1.1em;
   padding: .5em;
 }
 
 .schedule-address {
-  text-align: center;
   font-size: 1.1em;
   padding: 0.2em;
 }
@@ -139,11 +146,8 @@ h1, h2, h3, h4, p, div {
 }
 
 .registry-intro {
-  width: 60vw;
   padding: 1em;
-  margin: 0 auto;
   text-indent: 1em;
-  background-color: white;
 }
 
 .links {
@@ -160,6 +164,53 @@ h1, h2, h3, h4, p, div {
 #rsvp {
   height: 100vh;
   background-color: #bc9c0042;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+.form-control {
+  width: 80%;
+  background: rgba(255, 250, 240, 0.3);
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #6b592e;
+  color: #533a01;
+  font-size: 1em;
+  margin-bottom: 0.9em;
+  padding: 0.4em 1em;
+  resize: none;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.submit {
+  background: #bc9c00b5;
+  border: none !important;
+  color: black;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  margin: 1em 0 0;
+  padding: .5em .5em;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background: #2a0000;
+  border: none;
+  color: white;
+}
+
+.alert {
+  text-align: center;
+  color: #393f4d;
+  padding: 10px;
+  background: #feda6a;
+  margin: -1.5em auto .5em;
+  width: 80vw;
+  font-size: .9em;
+  display: none;
 }
 
 .footer {
@@ -183,4 +234,32 @@ h1, h2, h3, h4, p, div {
 .footer a:hover {
   color: #feda6a;
   transition: .4s ease-in-out;
+}
+
+.back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 1.5em;
+  right: 1.5em;
+  width: 3.5em;
+  user-select: none;
+  opacity: 0.3;
+  -webkit-transition: ease-in-out .3s;
+  -moz-transition: ease-in-out .3s;
+  -o-transition: ease-in-out .3s;
+  animation-name: fade-in-btn;
+  animation-duration: 1s;
+}
+
+@keyframes fade-in-btn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+.back-to-top-btn:hover {
+  opacity: 1;
 }

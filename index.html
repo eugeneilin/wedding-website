@@ -43,13 +43,16 @@
     <section class="section-text-wrapper">
       <p class="schedule">We are getting married
         <br>and would like to invite you
-        <br>to join us in the celebration of our union.</p>
-      <p class="schedule">The ceremony will be held at</p>
-      <p class="schedule-time">10:00 am</p>
+        <br>to join us in the celebration of our union!</p>
+      <p class="schedule">The ceremony will be held</p>
+      <p class="schedule-time">on <b>December 8, 2018</b>, at <b>10:00 am</b></p>
       <p class="schedule">at the following address:</p>
-      <p class="schedule-address">House of Prayer
-        <br>100 Floral Lane
-        <br>Dauphin, PA 17018</p>
+      <p class="schedule-address">
+        <b>House of Prayer</b>
+        <br>
+        <b>100 Floral Lane</b>
+        <br>
+        <b>Dauphin, PA 17018</b></p>
       <p class="schedule">Reception to follow.</p>
     </section>
     <a class="arrow-down arrow-down-2" href="#registry"></a>
@@ -64,15 +67,15 @@
     <section class="section-text-wrapper">
       <p class="registry-intro">Your presence at our wedding is the greatest gift we could ever receive. If you wish to
         honor us with a contribution, we prefer cash. However, if that is not your cup of tea, you might like
-        to try our gift registry below. Thank you very much!
+        to try our gift registry below.<br>Thank you very much!
       </p>
       <div class="links">
-        <div class="target">
-          <img src="img/target.png">
-        </div>
-        <div class="amazon">
-          <img src="img/amazon.png">
-        </div>
+        <a href="#">
+          <img class="target" src="img/target.png">
+        </a>
+        <a href="#">
+          <img class="amazon" src="img/amazon.png">
+        </a>
       </div>
     </section>
     <a class="arrow-down arrow-down-3" href="#rsvp"></a>
@@ -88,14 +91,20 @@
       <div class="alert">Thank you for your response!</div>
       <div class="contact-form">
         <form id="contact-form" method="post" action="">
-          <input name="name" type="text" class="form-control" placeholder="Your Name" required id="name">
-          <br>
-          <input name="email" type="email" class="form-control" placeholder="Your Email" required id="email">
-          <br>
-          <textarea name="message" class="form-control" placeholder="Enter message here..." rows="4"
-                    required id="message"></textarea>
-          <br>
-          <input type="submit" class="submit" value="SEND MESSAGE">
+          <input name="name" type="text" class="form-control" placeholder="First and Last Name" required id="name">
+          <input name="additional-guests" type="text" class="form-control"
+                 placeholder="Names of additional guests, if any" id="additional-guests">
+          <textarea name="message" class="form-control" placeholder="Optional message" rows="2" id="message"></textarea>
+          <p class="radio-q">Will you be able to attend our wedding?</p>
+          <div class="radio">
+            <input type="radio" id="yes" name="reply" value="yes">
+            <label for="yes">Yes, accept with pleasure.</label>
+          </div>
+          <div class="radio">
+            <input type="radio" id="no" name="reply" value="no">
+            <label for="no">No, regretfully decline.</label>
+          </div>
+          <input type="submit" class="submit" value="SUBMIT">
 
         </form>
       </div>

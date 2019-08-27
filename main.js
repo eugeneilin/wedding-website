@@ -1,18 +1,16 @@
-// Back to top Button
-function backToTop() {
-  document.documentElement.scrollTop = 0;
-  document.getElementById('back-to-top-btn').style.display = '';
-}
-
-function toggleBtnDisplay() {
-  if (document.body.scrollTop > 560 || document.documentElement.scrollTop > 560) {
-    document.getElementById("back-to-top-btn").style.display = "block";
+// Shrink "navigation" when user scrolls down # pixels from the top of the document
+function shrinkNavbar() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById('navigation').style.top = '4%';
+    document.getElementById('navigation').style.fontSize = '1em';
+    document.getElementById('logo').style.top = '1%';
   } else {
-    document.getElementById("back-to-top-btn").style.display = "none";
+    document.getElementById('navigation').style.top = '';
+    document.getElementById('navigation').style.fontSize = '';
+    document.getElementById('logo').style.top = '';
   }
 }
 
-// when user scrolls, trigger the following functions
 window.onscroll = function () {
-  toggleBtnDisplay();
+  shrinkNavbar()
 };

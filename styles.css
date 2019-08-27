@@ -21,6 +21,42 @@ h1, h2, h3, h4, p, div {
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background: #3f3f3f;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #484848;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #929292;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9a8000;
+}
+
+#main {
+  display: none;
+  animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .background-img {
   background: url(img/header.jpg);
   height: 100vh;
@@ -135,7 +171,6 @@ h1, h2, h3, h4, p, div {
   margin: 0 auto;
   left: 0;
   right: 0;
-  opacity: .5;
 }
 
 .arrow-down-1 {
@@ -168,7 +203,14 @@ h1, h2, h3, h4, p, div {
 }
 
 .arrow:hover {
-  opacity: 1;
+  border: solid #bc9c00;
+  border-width: 0 2px 2px 0;
+  margin-top: 3px;
+  transition: ease-in-out .1s;
+}
+
+.arrow-up:hover {
+  margin-top: 13px;
 }
 
 #schedule {
@@ -264,9 +306,16 @@ h1, h2, h3, h4, p, div {
   background-color: #c2010112;
 }
 
-.registry-intro {
+.registry-info {
   padding: 1.1em;
   line-height: 1.4em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.registry-info-thanks {
+  margin: 0 auto;
+  padding: .3em;
 }
 
 .links {

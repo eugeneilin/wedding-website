@@ -14,3 +14,16 @@ function shrinkNavbar() {
 window.onscroll = function () {
   shrinkNavbar()
 };
+
+// open main when arrow down btns or nav links are clicked
+function openMain() {
+  document.getElementById('main').style.display = 'block';
+}
+
+// close main when arrow up or logo is clicked
+function closeMain() {
+  setTimeout(
+    function () {
+      document.getElementById('main').style.display = 'none';
+    }, 800);
+}

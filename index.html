@@ -17,26 +17,28 @@
   <div class="img-overlay"></div>
   <div class="navbar">
     <a id="logo" href="#">
-      <div class="logo-letters">
+      <div class="logo-letters" onclick="closeMain()">
         <span class="logo-letter-e">E</span>
         <span>L</span>
       </div>
-      <span class="logo-ampersand">&</span>
-      <div class="logo-circle"></div>
+      <span class="logo-ampersand" onclick="closeMain()">&</span>
+      <div class="logo-circle" onclick="closeMain()"></div>
     </a>
-    <nav id="navigation">
+    <nav id="navigation" onclick="openMain()">
       <a class="navigation-link scroll" href="#schedule">Schedule</a>
       <a class="navigation-link scroll" href="#registry">Registry</a>
       <a class="navigation-link scroll" href="#rsvp">RSVP</a>
     </nav>
   </div>
   <div class="headline">Eugene & Liya</div>
-  <a class="arrow arrow-down-1" href="#schedule"></a>
+  <div onclick="openMain()">
+    <a class="arrow arrow-down-1" href="#schedule"></a>
+  </div>
 </header>
 
-<main>
-  <div id="schedule">
+<main id="main">
 
+  <div id="schedule">
     <div class="heading-construction">
       <div class="heading">
         <p>Schedule</p>
@@ -48,8 +50,8 @@
       <p class="schedule">We are getting married
         <br>and would like to invite you
         <br>to join us in the celebration of our union!</p>
-      <p class="schedule">The ceremony will be held</p>
-      <p class="schedule-time">on <b>December 8, 2018</b>, at <b>10:00 am</b></p>
+      <p class="schedule">The ceremony will be held on</p>
+      <p class="schedule-time"><b>Saturday, December 8, 2018</b>, at <b>10:00 am</b></p>
       <p class="schedule">at the following address:</p>
       <p class="schedule-address">
         <b>House of Prayer</b>
@@ -71,10 +73,11 @@
       </div>
     </div>
     <section class="section-text-wrapper">
-      <p class="registry-intro">Your presence at our wedding is the greatest gift we could ever receive. If you wish to
+      <p class="registry-info">Your presence at our wedding is the greatest gift we could ever receive. If you wish to
         honor us with a contribution, we prefer cash. However, if that is not your cup of tea, you might like
-        to try our gift registry below.<br>Thank you very much!
+        to try our gift registry below.
       </p>
+      <p class="registry-info-thanks">Thank you very much!</p>
       <div class="links">
         <a href="#">
           <img class="target" src="img/target.png">
@@ -100,8 +103,10 @@
       <div class="contact-form">
         <form id="contact-form" method="post" action="">
           <input name="name" type="text" class="form-control" placeholder="First and Last Name" required id="name">
+          <br>
           <input name="additional-guests" type="text" class="form-control"
                  placeholder="Names of additional guests, if any" id="additional-guests">
+          <br>
           <textarea name="message" class="form-control" placeholder="Optional message" rows="2" id="message"></textarea>
           <div class="radio-btns">
             <input type="radio" id="attending" name="reply" value="attending" required>
@@ -112,18 +117,17 @@
             <label for="not-attending">Not attending, sadly</label>
           </div>
           <input type="submit" class="submit" value="SUBMIT">
-
         </form>
       </div>
     </section>
-    <a class="arrow arrow-up" href="#"></a>
+    <div onclick="closeMain()">
+      <a class="arrow arrow-up" href="#"></a>
+    </div>
   </div>
 
 </main>
 
-<a onclick="backToTop()" title="Go to top" class="back-to-top-btn" id="back-to-top-btn"></a>
-
-<footer class="footer">
+<footer class="footer" id="footer">
   <div class="copyright">Copyright &copy; 2019 All Rights Reserved. Developed and designed by <a
           href="https://eugeneilin.dev" target="_blank">Eugene
     Ilin</a>.

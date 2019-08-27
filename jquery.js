@@ -23,4 +23,5 @@ $(document).ready(function () {
     if ($(this).scrollTop() < 300) {
       $('.navigation-link').removeClass('active');
     }
-  })});
+  });
+});

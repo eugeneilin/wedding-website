@@ -411,7 +411,7 @@ h1, h2, h3, h4, p, div {
 .copyright {
   font-size: 1em;
   color: #e9e9e9;
-  padding: 50px;
+  padding: 1.5em;
 }
 
 .footer a {
@@ -482,7 +482,7 @@ h1, h2, h3, h4, p, div {
     width: 200vw;
     transform: translateX(-24%);
   }
-  
+
   #logo {
     position: fixed;
     left: 5%;
@@ -494,7 +494,7 @@ h1, h2, h3, h4, p, div {
     transition: ease-in-out .3s;
     display: block;
   }
-  
+
   .headline {
     font-size: 5em;
   }
@@ -542,10 +542,12 @@ h1, h2, h3, h4, p, div {
   .form-control, .radio-btns, .alert {
     font-size: 1.6em;
   }
+
   .submit {
     width: 80vw;
     font-size: 1.6em;
   }
+
   .copyright {
     font-size: 1.6em;
   }
@@ -558,25 +560,54 @@ h1, h2, h3, h4, p, div {
     width: 100%;
   }
 
-  .headline {
-    font-size: 4.5em;
+  #navigation {
+    font-size: 1.1em;
   }
 
   .navigation-link {
     display: inline;
   }
 
+  .headline {
+    font-size: 4.5em;
+  }
+
   .menu-icon {
     display: none;
+  }
+
+  .heading-construction {
+    padding: 50px 0;
+  }
+
+  .heading {
+    font-size: 2em;
+    padding: 5px 32px;
+  }
+
+  .heading-left {
+    padding: 15px;
+    margin: -39px -47px;
+  }
+
+  .heading-right {
+    padding: 15px;
+    margin: -39px 111px;
+  }
+
+  #heading-left-rsvp {
+    padding: 15px;
+    margin: -39px -48px;
+  }
+
+  #heading-right-rsvp {
+    padding: 15px;
+    margin: -39px 137px;
   }
 
   .section-text-wrapper {
     width: 60vw;
     margin: auto auto 0;
-  }
-
-  .heading-construction {
-    padding: 50px 0;
   }
 
   .schedule {
@@ -597,28 +628,45 @@ h1, h2, h3, h4, p, div {
     width: 80%;
     margin: 0 auto;
     line-height: 1.4em;
+    font-size: 1em;
   }
 
   .registry-info-thanks {
     margin: 0 auto;
+    font-size: 1em;
   }
 
   .links {
     margin: 0 auto;
-    padding: 2em 0;
     width: 30vw;
     text-align: center;
   }
 
   .target, .amazon {
     width: 20vw;
+    padding: 1em 2em;
   }
 
   .form-control {
     width: 80%;
+    font-size: 1em;
   }
 
   .radio-btns {
     padding: .1em;
+    font-size: 1em;
+  }
+
+  .alert {
+    font-size: 1em;
+  }
+
+  .submit {
+    font-size: 1em;
+    width: 80%;
+  }
+
+  .copyright {
+    font-size: 1.1em;
   }
 }

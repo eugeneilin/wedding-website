@@ -45,7 +45,7 @@ h1, h2, h3, h4, p, div {
 
 #main {
   display: none;
-  animation: fade-in 2s;
+  animation: fade-in 1.5s;
 }
 
 @keyframes fade-in {
@@ -60,10 +60,10 @@ h1, h2, h3, h4, p, div {
 .background-img {
   background: url(img/header.jpg);
   height: 100vh;
-  top: 0;
-  left: 0;
   background-size: cover;
   position: relative;
+  width: 266vw;
+  transform: translateX(-32%);
 }
 
 .img-overlay {
@@ -80,14 +80,7 @@ h1, h2, h3, h4, p, div {
 }
 
 #logo {
-  position: fixed;
-  left: 5%;
-  top: 4%;
-  z-index: 1;
-  color: white;
-  text-shadow: 1px 1px 2px #000;
-  text-decoration: none;
-  transition: ease-in-out .3s;
+  display: none;
 }
 
 .logo-letters {
@@ -136,10 +129,11 @@ h1, h2, h3, h4, p, div {
 
 .navigation-link {
   color: white;
-  text-shadow: 1px 0 2px #2a0000;
+  text-shadow: 1px 1px 2px #2a000094;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0 0.5em;
+  display: none;
 }
 
 .navigation-link:hover {
@@ -150,9 +144,26 @@ h1, h2, h3, h4, p, div {
   color: #bc9c00;
 }
 
+/*.menu-icon {*/
+/*position: fixed;*/
+/*right: 7%;*/
+/*bottom: 6%;*/
+/*border: 1px solid black;*/
+/*border-radius: 50%;*/
+/*padding: .3em .1em;*/
+/*background: #80808099;*/
+/*}*/
+
+/*.menu-icon-bar {*/
+/*width: 1em;*/
+/*margin: .2em .3em;*/
+/*background-color: black;*/
+/*height: 0.1em;*/
+/*}*/
+
 .headline {
   position: absolute;
-  font-size: 4.5em;
+  font-size: 2.3em;
   text-transform: uppercase;
   color: white;
   top: 50%;
@@ -219,8 +230,7 @@ h1, h2, h3, h4, p, div {
 }
 
 .heading-construction {
-  display: flex;
-  padding: 50px 10px;
+  padding: 25px 0;
   position: relative;
 }
 
@@ -277,8 +287,6 @@ h1, h2, h3, h4, p, div {
 }
 
 .section-text-wrapper {
-  width: 60vw;
-  margin: auto auto 0;
   text-align: center;
   background-color: white;
   border: 1px silver solid;
@@ -288,7 +296,7 @@ h1, h2, h3, h4, p, div {
 .schedule {
   font-size: 1em;
   padding: .4em;
-  line-height: 1.4em;
+  line-height: 1.5em;
 }
 
 .schedule-time {
@@ -307,34 +315,26 @@ h1, h2, h3, h4, p, div {
 }
 
 .registry-info {
-  padding: 1.1em;
-  line-height: 1.4em;
-  width: 80%;
-  margin: 0 auto;
+  line-height: 1.5em;
 }
 
 .registry-info-thanks {
-  margin: 0 auto;
   padding: .3em;
+  margin: 0 auto 1em;
 }
 
-.links {
-  margin: 0 auto;
-  padding: 2em 0;
-  width: 30vw;
-  text-align: center;
+.links a {
+  text-decoration: none;
 }
 
 .target, .amazon {
   opacity: .5;
+  padding: .7em;
+  width: 50vw;
 }
 
 .target:hover, .amazon:hover {
   opacity: 1;
-}
-
-.target, .amazon {
-  padding: 1em;
 }
 
 #rsvp {
@@ -342,13 +342,18 @@ h1, h2, h3, h4, p, div {
   background-color: #bc9c0042;
 }
 
-.contact-form {
+#section-text-wrapper-rsvp {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.rsvp-form {
   text-align: center;
   margin: 3em 0;
 }
 
 .form-control {
-  width: 80%;
+  width: 80vw;
   border: none;
   outline: none;
   border-bottom: 1px solid #2a0000;
@@ -363,7 +368,7 @@ h1, h2, h3, h4, p, div {
 
 .radio-btns {
   font-size: 1em;
-  padding: .1em;
+  padding: .3em;
 }
 
 .submit {
@@ -371,7 +376,7 @@ h1, h2, h3, h4, p, div {
   border: 1px solid #2a0000;
   font-size: 1em;
   letter-spacing: 2px;
-  margin: 1.3em 0 0;
+  margin: 1.3em auto 0;
   padding: .5em .5em;
   width: 80%;
   font-family: 'Book Antiqua', sans-serif;
@@ -385,12 +390,12 @@ h1, h2, h3, h4, p, div {
 
 .alert {
   text-align: center;
-  color: #393f4d;
-  padding: 10px;
-  background: #bc9c00;
-  margin: -1.5em auto .5em;
-  width: 80vw;
-  font-size: .9em;
+  margin: 1.3em auto 0;
+  font-size: 1em;
+  color: white;
+  background: #550000cc;
+  padding: .5em 0.5em .625em;
+  width: 80%;
   display: none;
 }
 
@@ -414,4 +419,100 @@ h1, h2, h3, h4, p, div {
 
 .footer a:hover {
   color: #bc9c00;
+}
+
+/* -------- MEDIA QUERIES -------- */
+
+/* for Galaxy S5 */
+@media screen and (min-width: 360px) {
+  .background-img {
+
+  }
+}
+
+/* for iPhone 6/7/8/X*/
+@media screen and (min-width: 375px) {
+}
+
+/* for Pixel 2/2XL and iPhone 6/7/8 Pluses */
+@media screen and (min-width: 411px) {
+}
+
+/* for iPad */
+@media screen and (min-width: 760px) {
+}
+
+/* for iPad Pro and Desktops */
+@media screen and (min-width: 800px) {
+  .background-img {
+    transform: translateX(0);
+    width: 100%;
+  }
+
+  .headline {
+    font-size: 4.5em;
+  }
+
+  .navigation-link {
+    display: inline;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  #logo {
+    position: fixed;
+    left: 5%;
+    top: 4%;
+    z-index: 1;
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    text-decoration: none;
+    transition: ease-in-out .3s;
+  }
+
+  .section-text-wrapper {
+    width: 60vw;
+    margin: auto auto 0;
+  }
+
+  .heading-construction {
+    padding: 50px 0;
+  }
+
+  .schedule {
+    line-height: 1.4em;
+  }
+
+  .registry-info {
+    padding: 1.1em;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.4em;
+  }
+
+  .registry-info-thanks {
+    margin: 0 auto;
+  }
+
+  .links {
+    margin: 0 auto;
+    padding: 2em 0;
+    width: 30vw;
+    text-align: center;
+  }
+
+  .target, .amazon {
+    padding: 1em;
+    width: 20vw;
+  }
+
+  .form-control {
+    width: 80%;
+  }
+
+  .radio-btns {
+    padding: .1em;
+  }
 }

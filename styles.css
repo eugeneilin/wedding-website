@@ -316,11 +316,13 @@ h1, h2, h3, h4, p, div {
 
 .registry-info {
   line-height: 1.5em;
+  font-size: 1em;
 }
 
 .registry-info-thanks {
   padding: .3em;
   margin: 0 auto 1em;
+  font-size: 1em;
 }
 
 .links a {
@@ -425,21 +427,128 @@ h1, h2, h3, h4, p, div {
 
 /* for Galaxy S5 */
 @media screen and (min-width: 360px) {
-  .background-img {
-
-  }
 }
 
 /* for iPhone 6/7/8/X*/
 @media screen and (min-width: 375px) {
+  .registry-info {
+    padding-top: 2em;
+  }
 }
 
 /* for Pixel 2/2XL and iPhone 6/7/8 Pluses */
 @media screen and (min-width: 411px) {
+  .headline {
+    font-size: 2.6em;
+  }
+
+  .heading-construction {
+    padding: 40px 0;
+  }
+
+  .schedule {
+    font-size: 1.1em;
+  }
+
+  .schedule-time {
+    font-size: 1.2em;
+  }
+
+  .schedule-address {
+    font-size: 1.2em;
+  }
+
+  .registry-info {
+    font-size: 1.1em;
+  }
+
+  .registry-info-thanks {
+    font-size: 1.1em;
+    padding: 1em;
+  }
+
+  .target, .amazon {
+    padding: 1em;
+  }
+
+  #section-text-wrapper-rsvp {
+    padding-top: 2em;
+  }
 }
 
 /* for iPad */
 @media screen and (min-width: 760px) {
+  .background-img {
+    width: 200vw;
+    transform: translateX(-24%);
+  }
+  
+  #logo {
+    position: fixed;
+    left: 5%;
+    top: 4%;
+    z-index: 1;
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    text-decoration: none;
+    transition: ease-in-out .3s;
+    display: block;
+  }
+  
+  .headline {
+    font-size: 5em;
+  }
+
+  .schedule {
+    font-size: 1.6em;
+  }
+
+  .schedule-time, .schedule-address {
+    font-size: 1.7em;
+  }
+
+  .heading {
+    font-size: 3em;
+  }
+
+  .heading-left {
+    margin: -55px -56px;
+    padding: 22px;
+  }
+
+  .heading-right {
+    margin: -55px 151px;
+    padding: 22px;
+  }
+
+  #heading-left-rsvp {
+    margin: -55px -55px;
+    padding: 22px;
+  }
+
+  #heading-right-rsvp {
+    margin: -55px 193px;
+    padding: 22px;
+  }
+
+  .registry-info, .registry-info-thanks {
+    font-size: 1.6em;
+  }
+
+  .target, .amazon {
+    padding: 2em;
+  }
+
+  .form-control, .radio-btns, .alert {
+    font-size: 1.6em;
+  }
+  .submit {
+    width: 80vw;
+    font-size: 1.6em;
+  }
+  .copyright {
+    font-size: 1.6em;
+  }
 }
 
 /* for iPad Pro and Desktops */
@@ -461,17 +570,6 @@ h1, h2, h3, h4, p, div {
     display: none;
   }
 
-  #logo {
-    position: fixed;
-    left: 5%;
-    top: 4%;
-    z-index: 1;
-    color: white;
-    text-shadow: 1px 1px 2px #000;
-    text-decoration: none;
-    transition: ease-in-out .3s;
-  }
-
   .section-text-wrapper {
     width: 60vw;
     margin: auto auto 0;
@@ -483,6 +581,15 @@ h1, h2, h3, h4, p, div {
 
   .schedule {
     line-height: 1.4em;
+    font-size: 1em;
+  }
+
+  .schedule-time {
+    font-size: 1.1em;
+  }
+
+  .schedule-address {
+    font-size: 1.1em;
   }
 
   .registry-info {
@@ -504,7 +611,6 @@ h1, h2, h3, h4, p, div {
   }
 
   .target, .amazon {
-    padding: 1em;
     width: 20vw;
   }
 

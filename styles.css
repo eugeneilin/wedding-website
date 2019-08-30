@@ -45,6 +45,8 @@ h1, h2, h3, h4, p, div {
 
 #main {
   display: none;
+  -webkit-animation: fade-in 1.5s;
+  -o-animation: fade-in 1.5s;
   animation: fade-in 1.5s;
 }
 
@@ -63,6 +65,10 @@ h1, h2, h3, h4, p, div {
   background-size: cover;
   position: relative;
   width: 266vw;
+  -webkit-transform: translateX(-32%);
+  -moz-transform: translateX(-32%);
+  -ms-transform: translateX(-32%);
+  -o-transform: translateX(-32%);
   transform: translateX(-32%);
 }
 
@@ -110,6 +116,8 @@ h1, h2, h3, h4, p, div {
   left: 0;
   z-index: -1;
   position: absolute;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 }
 
@@ -124,6 +132,10 @@ h1, h2, h3, h4, p, div {
   text-align: center;
   z-index: 1;
   padding: 0;
+  -webkit-transition: ease-in-out .3s;
+  -moz-transition: ease-in-out .3s;
+  --ms-transition: ease-in-out .3s;
+  -o-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
 }
 
@@ -170,6 +182,10 @@ h1, h2, h3, h4, p, div {
   text-align: center;
   left: 50%;
   width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -195,6 +211,10 @@ h1, h2, h3, h4, p, div {
   left: 0;
   right: 0;
   border: solid white;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   transform: rotate(45deg);
   border-width: 0 2px 2px 0;
 }
@@ -212,6 +232,10 @@ h1, h2, h3, h4, p, div {
   left: 0;
   right: 0;
   border: solid black;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   transform: rotate(45deg);
   border-width: 0 2px 2px 0;
 }
@@ -229,6 +253,10 @@ h1, h2, h3, h4, p, div {
   left: 0;
   right: 0;
   border: solid black;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
   transform: rotate(45deg);
   border-width: 0 2px 2px 0;
 }
@@ -245,6 +273,10 @@ h1, h2, h3, h4, p, div {
   margin: 1.7em auto 0;
   left: 0;
   right: 0;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
   transform: rotate(225deg);
   border: solid black;
   border-width: 0 2px 2px 0;
@@ -274,11 +306,19 @@ h1, h2, h3, h4, p, div {
   font-size: 2em;
   top: 104%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .heading-left {
   border: solid silver;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
   transform: rotate(135deg);
   border-width: 0 1px 1px 0;
   position: absolute;
@@ -289,6 +329,10 @@ h1, h2, h3, h4, p, div {
 
 .heading-right {
   border: solid silver;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   border-width: 0 1px 1px 0;
   position: absolute;
@@ -299,6 +343,10 @@ h1, h2, h3, h4, p, div {
 
 #heading-left-rsvp {
   border: solid silver;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
   transform: rotate(135deg);
   border-width: 0 1px 1px 0;
   position: absolute;
@@ -309,6 +357,10 @@ h1, h2, h3, h4, p, div {
 
 #heading-right-rsvp {
   border: solid silver;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   border-width: 0 1px 1px 0;
   position: absolute;
@@ -511,6 +563,10 @@ h1, h2, h3, h4, p, div {
 @media screen and (min-width: 760px) {
   .background-img {
     width: 200vw;
+    -webkit-transform: translateX(-24%);
+    -moz-transform: translateX(-24%);
+    -ms-transform: translateX(-24%);
+    -o-transform: translateX(-24%);
     transform: translateX(-24%);
   }
 
@@ -522,6 +578,10 @@ h1, h2, h3, h4, p, div {
     color: white;
     text-shadow: 1px 1px 2px #000;
     text-decoration: none;
+    -webkit-transition: ease-in-out .3s;
+    -moz-transition: ease-in-out .3s;
+    --ms-transition: ease-in-out .3s;
+    -o-transition: ease-in-out .3s;
     transition: ease-in-out .3s;
     display: block;
   }
@@ -587,6 +647,10 @@ h1, h2, h3, h4, p, div {
 /* for iPad Pro and Desktops */
 @media screen and (min-width: 800px) {
   .background-img {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
     transform: translateX(0);
     width: 100%;
   }

@@ -250,15 +250,9 @@ h1, h2, h3, h4, p, div {
   border-width: 0 2px 2px 0;
 }
 
-.arrow-box:hover {
-  /*border: solid #bc9c00;*/
-  /*border-width: 0 2px 2px 0;*/
-  /*transition: ease-in-out .1s;*/
-  /*margin-top: 3px;*/
-}
-
-.arrow-box-up:hover {
-  /*margin-top: 13px;*/
+.arrow-1:hover, .arrow-2:hover, .arrow-3:hover, .arrow-4:hover, .arrow-up:hover {
+  border: solid #bc9c00;
+  border-width: 0 2px 2px 0;
 }
 
 #schedule {

@@ -185,29 +185,29 @@ h1, h2, h3, h4, p, div {
 }
 
 .arrow-down-1 {
-  top: 90%;
+  top: 87%;
   border: solid white;
   transform: rotate(45deg);
   border-width: 0 2px 2px 0;
 }
 
 .arrow-down-2 {
-  top: 190%;
+  top: 187%;
   border: solid black;
   transform: rotate(45deg);
   border-width: 0 2px 2px 0;
 }
 
 .arrow-down-3 {
-  top: 290%;
+  top: 287%;
   border: solid black;
   transform: rotate(45deg);
   border-width: 0 2px 2px 0;
 }
 
 .arrow-up {
+  top: 387%;
   transform: rotate(225deg);
-  top: 390%;
   border: solid black;
   border-width: 0 2px 2px 0;
   margin-top: 17px;

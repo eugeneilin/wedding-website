@@ -173,55 +173,92 @@ h1, h2, h3, h4, p, div {
   transform: translate(-50%, -50%);
 }
 
-.arrow {
+.arrow-box {
   position: absolute;
-  display: inline-block;
-  padding: 15px;
+  padding: 2.5em;
   width: 0;
-  height: 1em;
   margin: 0 auto;
   left: 0;
   right: 0;
 }
 
-.arrow-down-1 {
-  top: 87%;
+.arrow-box-down-1 {
+  top: 86%;
+}
+
+.arrow-1 {
+  position: absolute;
+  padding: 15px;
+  width: 0;
+  top: 86%;
+  margin: .5em auto 0;
+  left: 0;
+  right: 0;
   border: solid white;
   transform: rotate(45deg);
   border-width: 0 2px 2px 0;
 }
 
-.arrow-down-2 {
-  top: 187%;
+.arrow-box-down-2 {
+  top: 186%;
+}
+
+.arrow-2 {
+  position: absolute;
+  padding: 15px;
+  width: 0;
+  top: 186%;
+  margin: .5em auto 0;
+  left: 0;
+  right: 0;
   border: solid black;
   transform: rotate(45deg);
   border-width: 0 2px 2px 0;
 }
 
-.arrow-down-3 {
-  top: 287%;
+.arrow-box-down-3 {
+  top: 286%;
+}
+
+.arrow-3 {
+  position: absolute;
+  padding: 15px;
+  width: 0;
+  top: 286%;
+  margin: .5em auto 0;
+  left: 0;
+  right: 0;
   border: solid black;
   transform: rotate(45deg);
   border-width: 0 2px 2px 0;
+}
+
+.arrow-box-up {
+  top: 386%;
 }
 
 .arrow-up {
-  top: 387%;
+  top: 386%;
+  position: absolute;
+  padding: 15px;
+  width: 0;
+  margin: 1.7em auto 0;
+  left: 0;
+  right: 0;
   transform: rotate(225deg);
   border: solid black;
   border-width: 0 2px 2px 0;
-  margin-top: 17px;
 }
 
-.arrow:hover {
-  border: solid #bc9c00;
-  border-width: 0 2px 2px 0;
-  margin-top: 3px;
-  transition: ease-in-out .1s;
+.arrow-box:hover {
+  /*border: solid #bc9c00;*/
+  /*border-width: 0 2px 2px 0;*/
+  /*transition: ease-in-out .1s;*/
+  /*margin-top: 3px;*/
 }
 
-.arrow-up:hover {
-  margin-top: 13px;
+.arrow-box-up:hover {
+  /*margin-top: 13px;*/
 }
 
 #schedule {
